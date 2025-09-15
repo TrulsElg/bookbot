@@ -13,3 +13,6 @@ def count_letters(content):
                 letter_dict[c] = 1
 
     return letter_dict
+
+def sort_dictionary(dictionary):
+    return sorted(dictionary.items(), key=lambda d: d[1], reverse=True)
