@@ -4,11 +4,10 @@ def count_words(content):
 def count_letters(content):
     letter_dict = dict()
 
-    lines = "".join(content.split("\n"))
-    for char in lines:
+    for char in content:
         if char.isalpha():
             c = char.lower()
-            if c in letter_dict.keys():
+            if c in letter_dict:
                 letter_dict[c] += 1
             else:
                 letter_dict[c] = 1
